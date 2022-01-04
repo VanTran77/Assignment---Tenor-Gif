@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tenor Gif</title>
+</head>
+<body id="bodyClick">
+  <header class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" style="color: white; font-size: 30px; margin-left: 30px;">Tenor Gif !</a>
+    <form class="form-inline my-2 my-lg-0 search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter your topic" aria-label="Search" id="inputTopic">
+      <input class="form-control mr-sm-2" type="search" placeholder="The Number" aria-label="Search" id="inputNumber">
+      <button class="btn btn-info" type="button" id="btnSearch">Search</button>
+    </form>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light nav-bar">
+    <a class="navbar-brand" style="font-size: 30px; margin-left: 35px; margin-right: 40px;">Topics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="media">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="funny">Funny</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="sport">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="emotion">Emotion</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="computer">Computer</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="animal">Animal</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-info" href="#" id="nature">Nature</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Others
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" id="happy">Happy</a>
+            <a class="dropdown-item" href="#" id="beach">Beach</a>
+            <a class="dropdown-item" href="#" id="shopping">Shopping</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <main>
+    <div id="container" > 
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
