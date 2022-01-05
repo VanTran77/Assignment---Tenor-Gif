@@ -91,6 +91,5 @@ $('#inputNumber').keyup(function(e){
   $('#beach').click(function(){
     getPics('beach', 32);
   });
-
   window.onload = getPics('ocean background',12);
 })
