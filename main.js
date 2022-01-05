@@ -16,10 +16,10 @@ $(document).ready( function(){
 function output(arr){
   let result = "";
   arr.forEach(picture => {
-    // console.log(picture.media[0].gif.url); 
-    result += `<img src=${picture.media[0].gif.url} >`;
-    $('#container').html(result);
-  })
+     result += `<img src=${picture.media[0].gif.url} >`;
+   })
+  $('#container').html(result);
+  console.log(result);
 }
 
 $('#btnSearch').click(function(){
@@ -61,8 +61,8 @@ $('#inputNumber').keyup(function(e){
 });
 
   // Topics selected
-  $('#media').click(function(){
-    getPics('media', 32);
+  $('#christmas').click(function(){
+    getPics('christmas', 32);
   });
   $('#shopping').click(function(){
     getPics('shopping', 32);
