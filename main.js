@@ -9,6 +9,8 @@ $(document).ready( function(){
                 var picsArr = xhr.response.results;
                 // console.log(picsArr);
                 output(picsArr);
+          }else if (XMLHttpRequest.status === 404){
+            $('#loadPics').html(`<p class="warning_mgs">Please Try again with another topic!</p>`);
           }
       }
       xhr.send();
@@ -20,13 +22,15 @@ function output(arr){
      result += `<img src=${picture.media[0].gif.url} class="image">`;
    })
   $('#loadPics').html(result);
-  // console.log(result);
 }
 
-$('#btnSearch').click(function(){
+$('#btnSearch').click(function(e){
+  e.preventDefault();
     let myTopic = $('#inputTopic').val();
     let myNumber = $('#inputNumber').val();
-     checkInput(myTopic, myNumber);
+    checkInput(myTopic, myNumber);
+    $('#inputTopic').val('');
+    $('#inputNumber').val('');
 });
 
 function checkInput(tp, num){
