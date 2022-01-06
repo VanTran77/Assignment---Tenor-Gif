@@ -7,6 +7,7 @@ $(document).ready( function(){
       xhr.onreadystatechange = function(){
           if(xhr.readyState === 4 && xhr.status === 200){
                 var picsArr = xhr.response.results;
+                // console.log(picsArr);
                 output(picsArr);
           }
       }
@@ -16,10 +17,10 @@ $(document).ready( function(){
 function output(arr){
   let result = "";
   arr.forEach(picture => {
-     result += `<img src=${picture.media[0].gif.url} >`;
+     result += `<img src=${picture.media[0].gif.url} class="image">`;
    })
-  $('#container').html(result);
-  console.log(result);
+  $('#loadPics').html(result);
+  // console.log(result);
 }
 
 $('#btnSearch').click(function(){
@@ -33,10 +34,10 @@ function checkInput(tp, num){
         getPics(tp, num);
     }
     else if(num < 1 || num > 100){
-      $('#container').html(`<p class="warning_mgs">Please enter a number between 1 & 100</p>`);
+      $('#loadPics').html(`<p class="warning_mgs">Please enter a number between 1 & 100</p>`);
     }
     else if(tp == ''){
-      $('#container').html(`<p class="warning_mgs">Please enter a topic</p>`);
+      $('#loadPics').html(`<p class="warning_mgs">Please enter a topic</p>`);
     }
 }
 

@@ -11,12 +11,11 @@ font-weight: bold;
 border-top-right-radius: 5px;
 border-top-left-radius: 5px;
 }
-.navearch{
-    margin-left: 130px;
+.navSearch{
+    margin-left: 180px;
 }
 #inputTopic{
     width: 350px;
-    margin-left: 120px;
 }
 #inputNumber{
     width: 130px;
@@ -59,29 +58,28 @@ main{
     width: 75%;
     margin: auto;
 }
-#container{
+#loadPics{
     background-image: url(./images/bg.jpg);
     margin: 2px auto 20px auto;
     border-radius: 5px;
     text-align: center;
 }
-main > div > img{
-    width: 200px;
-    height: 200px;
-    margin: 20px 18px 20px 18px;
+.image{
+    width: 210px;
+    height: 210px;
+    margin: 20px;
     border-radius: 10%;
 }
-main > div > img:hover{
+.image:hover{
     transform: scale(1.1);
 }
 .warning_mgs{
-    margin-top: 30px;
     text-align: center;
     font-size: 40px;
-    font-weight: 700;;
-    margin-top: 100px;
+    font-weight: 700;
     color: red;
     height: 600px;
+    padding-top: 200px;
 }
 
 
